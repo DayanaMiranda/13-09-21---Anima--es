@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+  background-image:url(../img/background.png);
+  background-size: cover;
+  background-position: 0;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+
+
+
+
+.bola { 
+  width: 200px;
+  height: 200px;
+  animation: rolar 4s infinite alternate; 
+  opacity: 0;
+ 
+}
+
+
+@keyframes rolar {
+  from {
+    transform: translateX(1000px) rotate(360deg);
+    opacity: 1;
+    
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+.snorlax{
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+  margin-bottom: 30px;  
+  animation: skew 2s infinite;
+  transform: skew(10deg); 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(10deg) scale(0.5);
+  }
+  100% {
+    transform: skewX(-10deg) scale(1.5);
+  }
+}
+
+
+
+
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:30px;
+  transition: background 1s;
+  border-radius: 10px;
+  background-color: rgb(247, 250, 56);
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+  box-shadow: 1px 1px 20px 0 #000000;
+
+}
+
+button:hover{
+  background: rgb(49, 168, 177);
+}
+
